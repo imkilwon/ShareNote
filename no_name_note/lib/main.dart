@@ -1,22 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:no_name_note/pages/homepage.dart';
+import 'package:no_name_note/pages/LoginPage/SignMain.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'pages/HomePage/home.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+void main() => runApp(NoNameNote());
+
+class NoNameNote extends StatelessWidget {
+  const NoNameNote({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: '이름없는 노트',
+      debugShowCheckedModeBanner: false,
+      title: 'no_name_note',
       theme: ThemeData(
-        primarySwatch: Colors.lime,
+        primarySwatch: Colors.cyan,
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: const AppBarTheme(color: Colors. white, elevation: 0),
       ),
-      home: const HomePage(),
+      home: SingUpMain(),
+      /*DefaultTabController(
+        length: 6,
+          child: HomePage(),
+      ),*/
     );
   }
 }
