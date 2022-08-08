@@ -4,8 +4,8 @@ import 'package:no_name_note/pages/LoginPage/login.dart';
 
 import 'signUp.dart';
 
-class SingUpMain extends StatelessWidget {
-  const SingUpMain({Key? key}) : super(key: key);
+class SignUpMain extends StatelessWidget {
+  const SignUpMain({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

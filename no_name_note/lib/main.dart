@@ -19,7 +19,7 @@ class NoNameNote extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         appBarTheme: const AppBarTheme(color: Colors. white, elevation: 0),
       ),
-      home: SingUpMain(),
+      home: SignUpMain(),
       /*DefaultTabController(
         length: 6,
           child: HomePage(),

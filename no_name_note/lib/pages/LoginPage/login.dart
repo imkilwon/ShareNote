@@ -61,9 +61,14 @@ class LoginPage extends StatelessWidget {
                   child: MaterialButton(
                     minWidth: double.infinity,
                     height: 60,
-                    onPressed: () {},
-                    color: Colors.lightBlueAccent,
+                    onPressed: (){
+                      Get.to(()=>LoginPage());
+                    },
                     shape: RoundedRectangleBorder(
+                      side:BorderSide(
+                        color: Colors.lightBlueAccent,
+                      ),
+
                       borderRadius: BorderRadius.circular(50),
                     ),
                     child: Text(
@@ -71,7 +76,7 @@ class LoginPage extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 18,
-                        color: Colors.white,
+                        color: Colors.lightBlueAccent,
                       ),
                     ),
                   ),
